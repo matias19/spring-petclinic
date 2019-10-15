@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'git pull origin master'
-        sh 'gradle build'
+        sh './gradlew build'
         sh 'java -jar build/libs/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar  '
       }
     }
