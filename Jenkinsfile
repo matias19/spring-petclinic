@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'java'
-    }
-
-  }
+  agent any
   stages {
     stage('Build') {
       steps {
