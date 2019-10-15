@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh 'git pull origin master'
         sh './gradlew build'
-        sh 'java -jar build/libs/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar  '
+        sh './gradlew bootRun -Dserver.port=8090'
       }
     }
     stage('Test') {
