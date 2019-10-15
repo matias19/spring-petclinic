@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.springframework.samples.petclinic.owner.VisitControllerTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-15T03:03:54" hostname="Matias-W10" time="0.083">
+  <properties/>
+  <testcase name="testProcessNewVisitFormHasErrors" classname="org.springframework.samples.petclinic.owner.VisitControllerTests" time="0.061"/>
+  <testcase name="testProcessNewVisitFormSuccess" classname="org.springframework.samples.petclinic.owner.VisitControllerTests" time="0.004"/>
+  <testcase name="testInitNewVisitForm" classname="org.springframework.samples.petclinic.owner.VisitControllerTests" time="0.017"/>
+  <system-out><![CDATA[2019-10-15 00:03:53.546  INFO 14360 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.springframework.samples.petclinic.owner.VisitControllerTests], using SpringBootContextLoader
+2019-10-15 00:03:53.547  INFO 14360 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.springframework.samples.petclinic.owner.VisitControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-10-15 00:03:53.547  INFO 14360 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.springframework.samples.petclinic.owner.VisitControllerTests]: VisitControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-10-15 00:03:53.551  INFO 14360 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.springframework.samples.petclinic.PetClinicApplication for test class org.springframework.samples.petclinic.owner.VisitControllerTests
+2019-10-15 00:03:53.551  INFO 14360 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-10-15 00:03:53.552  INFO 14360 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@e9f94c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1ccd501, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1b50084, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@739319, org.springframework.test.context.support.DirtiesContextTestExecutionListener@10f2f42, org.springframework.test.context.transaction.TransactionalTestExecutionListener@989bff, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1f41948, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1b7a1b4, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1d0f67f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1cbcd19, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@10be71, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@fa0d06]
+
+
+              |\      _,,,--,,_
+             /,`.-'`'   ._  \-;;,_
+  _______ __|,4-  ) )_   .;.(__`'-'__     ___ __    _ ___ _______
+ |       | '---''(_/._)-'(_\_)   |   |   |   |  |  | |   |       |
+ |    _  |    ___|_     _|       |   |   |   |   |_| |   |       | __ _ _
+ |   |_| |   |___  |   | |       |   |   |   |       |   |       | \ \ \ \
+ |    ___|    ___| |   | |      _|   |___|   |  _    |   |      _|  \ \ \ \
+ |   |   |   |___  |   | |     |_|       |   | | |   |   |     |_    ) ) ) )
+ |___|   |_______| |___| |_______|_______|___|_|  |__|___|_______|  / / / /
+ ==================================================================/_/_/_/
+
+:: Built with Spring Boot :: 2.1.9.RELEASE
+
+
+2019-10-15 00:03:53.630  INFO 14360 --- [    Test worker] o.s.s.p.owner.VisitControllerTests       : Starting VisitControllerTests on Matias-W10 with PID 14360 (started by Matias in C:\Users\Matias\docker\spring-petclinic)
+2019-10-15 00:03:53.631  INFO 14360 --- [    Test worker] o.s.s.p.owner.VisitControllerTests       : No active profile set, falling back to default profiles: default
+2019-10-15 00:03:53.979  INFO 14360 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-15 00:03:54.161  INFO 14360 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-15 00:03:54.161  INFO 14360 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-15 00:03:54.169  INFO 14360 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 7 ms
+2019-10-15 00:03:54.185  INFO 14360 --- [    Test worker] o.s.s.p.owner.VisitControllerTests       : Started VisitControllerTests in 0.631 seconds (JVM running for 6.316)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
