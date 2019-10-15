@@ -13,7 +13,7 @@ pipeline {
         CI = 'true'
       }
       steps {
-        sh 'gradle test'
+        sh './gradlew test'
       }
     }
     stage('Validate') {
